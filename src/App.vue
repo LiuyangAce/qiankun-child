@@ -1,12 +1,18 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view />
+  <div class="App">
+    <nav>
+      <router-link to="/home">Home</router-link> |
+      <router-link to="/about">About</router-link>
+      <h1>子应用</h1>
+    </nav>
+    <router-view />
+  </div>
 </template>
 
 <style>
+.App {
+  border: 5px solid black;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
